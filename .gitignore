@@ -1,0 +1,17 @@
+config.R
+.Rproj.user
+*.Rroj
+.Rhistory
+.RData
+data
+raw_data
+
+# Example code in package build process
+*-Ex.R
+
+# RStudio files
+.Rproj.user/
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
