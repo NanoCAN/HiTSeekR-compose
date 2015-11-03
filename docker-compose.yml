@@ -10,7 +10,7 @@ nginx:
   - ./nginx/nginx.conf:/opt/nginx/conf/nginx.conf
  restart: always
 hitseekrA:
- image: nanocan/hitseekr:0.1
+ image: nanocan/hitseekr
  volumes:
   - ./data:/srv/hitseekr/data
   - ./config.R:/srv/hitseekr/config.R
@@ -18,7 +18,7 @@ hitseekrA:
   - redis
  restart: always
 hitseekrB:
- image: nanocan/hitseekr:0.1
+ image: nanocan/hitseekr
  volumes:
   - ./data:/srv/hitseekr/data
   - ./config.R:/srv/hitseekr/config.R
@@ -26,7 +26,7 @@ hitseekrB:
   - redis
  restart: always
 hitseekrC:
- image: nanocan/hitseekr:0.1
+ image: nanocan/hitseekr
  links:
   - redis
  volumes:
